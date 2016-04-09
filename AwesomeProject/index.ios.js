@@ -9,6 +9,8 @@ import React, {
   StyleSheet,
   Text,
   Image,
+  Dimensions,
+  Platform,
   View
 } from 'react-native';
 
@@ -36,7 +38,24 @@ import Discover from  './home';
 import RouteMe from './home';
 
 class AwesomeProject extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+            selectedTab: HOME_TAB,
+            tabBarShow:true
+        };
+  }
 
+  _renderBadge(badgeCount) {
+          if (!badgeCount) {
+              return null;
+          }
+          return (
+              <Image style={styles.badgeBg} source={require('./images/home.png')}>
+                  <Text style={styles.badgeText}>{badgeCount}</Text>
+              </Image>
+          );
+      }
 
 _renderTabItem(img,selectedImg,tag,title,badgeCount,childView){
   return(
@@ -75,8 +94,9 @@ _createChildView(tag){
 }
 
   render() {
+    let {tabBarShow} = this.state;
     return (
-      <View>
+      <View style={styles.container}>
         <TabNavigator
           hidesTabTouch={false}
           sceneStyle={{paddingBottom: 0}}
