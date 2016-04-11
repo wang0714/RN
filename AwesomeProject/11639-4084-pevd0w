@@ -1,0 +1,4 @@
+
+          module.exports = require("/Users/wanggaoming/Desktop/gitHub/RN/AwesomeProject/node_modules/react-native/packager/react-packager/src/JSTransformer/worker.js");
+          require("/Users/wanggaoming/Desktop/gitHub/RN/AwesomeProject/node_modules/react-native/packager/transformer.js");
+          
