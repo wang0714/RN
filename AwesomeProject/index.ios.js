@@ -32,10 +32,10 @@ let ME_PRESS = require('./images/me_selected.png');
 
 import TabNavigator from 'react-native-tab-navigator';
 
-import RouteHome from './home';
-import Message from './home';
-import Discover from  './home';
-import RouteMe from './home';
+import RouteHome from './app/home/home';
+import Message from './app/home/home';
+import Discover from  './app/home/home';
+import RouteMe from './app/home/home';
 
 class AwesomeProject extends Component {
   constructor(props){
