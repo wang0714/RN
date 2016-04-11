@@ -93,6 +93,7 @@ _createChildView(tag){
         return (<View style={styles.container}>{renderView}</View>)
 }
 
+
   render() {
     let {tabBarShow} = this.state;
     return (
@@ -107,8 +108,6 @@ _createChildView(tag){
           {this._renderTabItem(ME_NORMAL, ME_PRESS, ME_TAB, '我的', 0, this._createChildView(ME_TAB))}
         </TabNavigator>
       </View>
-
-
     );
   }
 }
