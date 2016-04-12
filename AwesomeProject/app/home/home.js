@@ -6,13 +6,15 @@ import React,{
   Component,
   ScrollView,
   Dimensions,
+  ListView,
 } from 'react-native';
 
 import Header from '../components/header';
 import ViewSwiper from 'react-native-swiper';
 import MenuItem from '../components/menuItem';
 import CellHeaderStyle1 from '../components/cellHeaderStyle1';
-import HomeGoodsStyle1 from '../components/homeGoodsStyle1'
+import HomeGoodsStyle1 from '../components/homeGoodsStyle1';
+import ListViewStyle from '../components/listViewStyle';
 
 const MenuImages = [
   require('../../images/menuImages/category_0.png'),
@@ -75,27 +77,27 @@ export default class Home extends Component {
           horizontal={true}
           showsHorizontalScrollIndicator={false}
         >
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443598413319761.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443618115141919.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443671970687539.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443689808458163.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443598413319761.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443618115141919.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443671970687539.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443689808458163.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443598413319761.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443618115141919.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443671970687539.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443689808458163.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443598413319761.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443618115141919.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443671970687539.jpg'}/>
-        <HomeGoodsStyle1 style={styles.goodsStyle1} img={'http://www.shequjiayuan.com/data/afficheimg/1437443689808458163.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443598413319761.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443618115141919.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443671970687539.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443689808458163.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443598413319761.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443618115141919.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443671970687539.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443689808458163.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443598413319761.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443618115141919.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443671970687539.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443689808458163.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443598413319761.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443618115141919.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443671970687539.jpg'}/>
+        <HomeGoodsStyle1 style={styles.goodsStyle1} originalPrice={'177.0'} shopPrice={'120.0'} img={'http://www.shequjiayuan.com/data/afficheimg/1437443689808458163.jpg'}/>
         <Text style={{width:20,textAlign:'center',justifyContent:'center',alignItems:'center',}} numberOfLines={4}>{'查看更多'}</Text>
-
         </ScrollView>
-
       </View>
+
+      <ListViewStyle/>
 
 
 

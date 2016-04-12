@@ -73,6 +73,7 @@ var styles = StyleSheet.create({
   text:{
     marginTop:10,
     color:'#333333',
+    fontSize:10,
     alignItems:'center'
   }
 });

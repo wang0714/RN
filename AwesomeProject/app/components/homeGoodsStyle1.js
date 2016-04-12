@@ -25,7 +25,7 @@ export default class HomeGoodsStyle1 extends Component {
     return(
       <View style={styles.view}>
         <Image style={styles.img} source={{uri:this.props.img}}/>
-        <Text>{this.propshopPrice}</Text>
+        <Text>{this.props.shopPrice}</Text>
         <Text>{this.props.originalPrice}</Text>
       </View>
     );
